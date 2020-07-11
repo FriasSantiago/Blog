@@ -1,0 +1,92 @@
+body, html {
+    height: 100%;
+}
+
+.body-style {
+    background-color: #353535;
+}
+
+.form-container {
+    position: absolute;
+    top: 14vh;
+    padding: 40px;
+}
+
+.inner-form {
+    padding-right: 40px;
+}
+
+.login-img {
+    top: 27vh;
+    height: 40vh;
+    margin-left: 15px;
+    border-left: 1px solid #9b9a9a;
+}
+
+.login-img img {
+    margin: 20px 0 0 40px;
+}
+
+.login-msg {
+    font-weight: 400;
+    font-size: 40px;
+    color: rgb(224, 224, 224);
+    margin-bottom: 40px;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active  {
+    -webkit-box-shadow: 0 0 0 30px #353535 inset !important;
+    -webkit-text-fill-color: white;
+}
+
+.form-login input[type=password],
+.form-login input[type=text]{
+    width: 100%;
+    display: block;
+    margin: 20px 0;
+    padding: 10px;
+    position: relative;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    background-color: transparent;
+    border: 2px solid #65c298;
+    color: white;
+}
+
+.form-login input[type=password]::placeholder,
+.form-login input[type=text]::placeholder {
+    color: white;
+}
+
+.form-login input[type=submit] {
+    margin: 45px 0 20px 0;
+}
+
+.form-login .form-control:focus {
+    box-shadow: none;
+    outline: 0;
+}
+
+.btn-login {
+    background-color: #65d6a4;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    letter-spacing: 1.5px;
+}
+
+.btn-login:hover {
+    transition: background-color .4s;
+    background-color: #40f6a4;
+}
+
+.reg-msg {
+    color: white;
+}
+
+.reg-msg:hover {
+    color: white;
+}

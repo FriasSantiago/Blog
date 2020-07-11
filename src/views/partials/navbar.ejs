@@ -1,0 +1,47 @@
+<nav class="navbar navbar-expand-lg main-nav">
+    
+    <img src="../assets/logos/blog-logo.png" alt="Brand Logo" width="40" height="50" class="navbar-brand">
+    
+    <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon show-btn"></span>
+    </button>
+    
+    <div class="collapse navbar-collapse nav-ctt" id="navbarNav">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/blog">Blog</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+            </li>
+            <% if(req.user) { %>
+                <li class="nav-item">
+                    <a class="nav-link" href="/profile?user=<%= req.user.uid %>">Profile</a>
+                </li>
+            <% } %>
+        </ul>
+
+        <form class="form-inline my-2 my-lg-0 search-form" method="POST" action="/user-profile">
+            <input class="form-control mr-sm-2" type="search" name="user" placeholder="Search user" aria-label="Search">
+            <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+        </form>
+
+        <% if (req.user) {%>
+            <form class="form-inline" action="/logout" method="GET">
+                <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Log Out</button>
+            </form>
+        <%} else { %>
+            <form class="form-inline register-btn my-2" action="/register" method="GET">
+                <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Register</button>
+            </form>
+            <form class="form-inline" action="/login" method="GET">
+                <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Log In</button>
+            </form>
+        <% } %>
+        
+    </div>
+
+</nav>

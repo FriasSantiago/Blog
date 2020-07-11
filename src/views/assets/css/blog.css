@@ -1,0 +1,111 @@
+/* MAIN CONTAINER STYLE */
+
+/* Container */
+.main-container {
+    background-image: url('../logos/posts-bg.png');
+    min-height: 47rem;
+}
+
+/* ------------------- */
+
+/* BLOG CONTENT */
+
+/* Blog styles */
+.main-blog {
+    border-left: 1px solid #b6b6b6;
+    border-right: 1px solid #b6b6b6;
+    background-color: white;
+}
+
+#blog-content {
+    min-height: 100vh;
+}
+
+/* Posts form */
+.post-form {
+    margin: 6vh 0 10px 0;
+    background-color: #dbdbdb;
+    border: 1px solid #aaaaaa;
+    border-radius: 5px;
+}
+
+/* Title */
+.post-title {
+    color: #2c2c2c;
+    text-align: left;
+    margin: 10px 0 8px 4px;
+    font-size: 25px;
+}
+
+/* Post */
+.post-form textarea {
+    resize: none;
+    width: 100%;
+    float: left;
+    padding: 10px;
+}
+
+/* ------------------ */
+
+/* Post container style */
+#main-card {
+    margin: 20px 0;
+    width: 83.5%;
+    background-color: #dbdbdb;
+    border: 1px solid #8a8a8a;
+}
+
+#card-data {
+    font-size: 20px;
+    color: black;
+    float: left;
+    text-align: left;
+}
+
+.msg-cont {
+    width: 83.5%;
+    margin-left: 8.3%;
+    margin-top: 15px;
+}
+
+/* Post button */
+.btn-post {
+    margin-top: 15px;
+    background-color: #5c5c5c;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    letter-spacing: 1.5px;
+}
+
+.btn-post:hover {
+    transition: background-color .4s;
+    background-color: #424242;
+}
+
+/* Deleting post button */
+.close-btn {
+    position: relative;
+    top: -35px;
+}
+
+/* Error classes */
+.error-small {
+    color: #e64141;
+}
+
+.error-content {
+    border: 1px solid #e64141;
+}
+
+.close-btn span:hover {
+    color: #e64141;
+}
+
+.search-form {
+    margin-right: 4rem;
+}
+
+/* Show more button */
+.show-more {
+    margin: 10px 0 25px 6.7%;
+}
